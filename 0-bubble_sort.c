@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * bubble_sort - Function that sorts a list in ascending order using bubble sort
- * algorithm.
+ * bubble_sort - Function that sorts a list in ascending order using bubble
+ * sort algorithm.
  * It goes comparing one element with the previous and swaps them
  * if neccesary, and then repeats the process until no changes are done.
  * @array: an array of integers

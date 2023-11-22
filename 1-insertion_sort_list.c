@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * insertion_sort_list - Function that sorts a doubly linked list using the insertion sort
- * algorithm.
+ * insertion_sort_list - Function that sorts a doubly linked list using the
+ * insertion sort algorithm.
  * It iterates through the elements, comparing each with the previous one.
  * If an element is smaller, it swaps them.
  * @list: Head node of the list.
@@ -25,7 +25,6 @@ void insertion_sort_list(listint_t **list)
 	{
 		/* Save the next node for the next iteration */
 		next_node = current->next;
-
 		/* Perform insertion sort by comparing with previous nodes */
 		while (current->prev && current->n < current->prev->n)
 		{
@@ -33,7 +32,6 @@ void insertion_sort_list(listint_t **list)
 			current->prev->next = current->next;
 			if (current->next)
 				current->next->prev = current->prev;
-
 			/* Update node positions */
 			current->next = current->prev;
 			if (current->next)
@@ -49,7 +47,6 @@ void insertion_sort_list(listint_t **list)
 
 			print_list(*list); /* Print the current state of the list */
 		}
-
 		current = next_node; /* Move to the next node in the iteration */
 	}
 }

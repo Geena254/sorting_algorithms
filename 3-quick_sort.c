@@ -1,7 +1,8 @@
 #include "sort.h"
 
 /**
- * quick_partition - Function that partitions the array around a pivot for quicksort.
+ * quick_partition - Function that partitions the array around a pivot for
+ * quicksort.
  * @array: Pointer to the array.
  * @low: Starting index of the partition.
  * @high: Ending index of the partition.
